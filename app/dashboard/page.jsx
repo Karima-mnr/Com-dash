@@ -13,6 +13,7 @@ import {
 } from 'chart.js';
 import { Bar, Doughnut } from 'react-chartjs-2';
 import Image from 'next/image';
+import logo from '@/public/infoBrainsLogo.png';
 import {
   Users,
   Mail,
@@ -259,14 +260,9 @@ export default function Dashboard() {
         boxShadow: '0 1px 3px rgba(0,0,0,0.02)',
       }}>
         <div style={{ display:'flex', alignItems:'center', gap: isMobile ? 12 : 20 }}>
-            <Image 
-            src="/infobrainsLogo.png" 
-            alt="Infobrains" 
-            width={isMobile ? 32 : 42}
-            height={isMobile ? 32 : 42}
-            style={{ width: 'auto', height: isMobile ? 32 : 42 }}
-            priority
-            />          {!isMobile && <div style={{ width: 1, height: 32, background: '#E5E7EB' }} />}
+        <img src={logo.src} alt="Infobrains" style={{ height: isMobile ? 32 : 42, width: 'auto' }} />
+      
+            {!isMobile && <div style={{ width: 1, height: 32, background: '#E5E7EB' }} />}
           {!isMobile && (
             <div>
               <h1 style={{ fontSize: 16, fontWeight: 600, color: '#111827' }}>
