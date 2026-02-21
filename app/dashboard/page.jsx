@@ -221,7 +221,7 @@ export default function Dashboard() {
   if (loading) return (
     <div style={{ minHeight:'100vh', display:'flex', alignItems:'center', justifyContent:'center', background:'#F9FAFB' }}>
       <div style={{ textAlign:'center' }}>
-        <RefreshCw style={{ width: 28, height: 28, color: '#9CA3AF', margin:'0 auto 12px', animation:'spin 1s linear infinite' }} />
+        <RefreshCw className='animate-spin' style={{ width: 28, height: 28, color: '#9CA3AF', margin:'0 auto 12px', animation:'spin 1s linear infinite' }} />
         <p style={{ color:'#6B7280', fontSize:13 }}>Loading dashboard…</p>
       </div>
     </div>
